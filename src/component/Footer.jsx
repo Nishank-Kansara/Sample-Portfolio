@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Logo */}
         <div className="footer__logo">
           <span className="footer__logo-bracket">{'<'}</span>
-          <span className="footer__logo-name">Nisha</span>
+          <span className="footer__logo-name">Nishank</span>
           <span className="footer__logo-bracket">{'/>'}</span>
         </div>
 
@@ -26,7 +26,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="footer__copy">
-          © {new Date().getFullYear()} Nisha. Crafted with ❤️ & Three.js
+          © {new Date().getFullYear()} Nishank. Crafted with ❤️ & Three.js
         </p>
       </div>
 
