@@ -20,7 +20,7 @@ function Loader() {
       <div className="page-loader__inner">
         <div className="page-loader__logo">
           <span className="page-loader__bracket">{'<'}</span>
-          <span className="page-loader__name">N</span>
+          <span className="page-loader__name">J</span>
           <span className="page-loader__bracket">{'/>'}</span>
         </div>
         <div className="page-loader__bar">
