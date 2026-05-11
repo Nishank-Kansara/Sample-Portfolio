@@ -12,7 +12,7 @@ export const navLinks = [
 
 export const heroData = {
   greeting: "Hello, I'm",
-  name: "Nishank",
+  name: "Jiya",
   role: "Full-Stack Developer",
   roles: ["Full-Stack Developer", "3D Web Designer", "UI/UX Enthusiast", "Creative Coder"],
   tagline: "Crafting immersive digital experiences at the intersection of code & creativity.",
@@ -190,7 +190,7 @@ export const contactData = {
   title: "Get In Touch",
   tag: "Contact Me",
   description: "Have a project in mind or want to collaborate? I'd love to hear from you. Let's create something amazing together!",
-  email: "Nishank@example.com",
+  email: "Jiya@example.com",
   socials: [
     { name: "GitHub",   icon: "GH",  href: "#", color: "#915eff" },
     { name: "LinkedIn", icon: "LI",  href: "#", color: "#00d4ff" },

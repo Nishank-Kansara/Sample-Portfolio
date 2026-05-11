@@ -49,7 +49,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="navbar__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <span className="navbar__logo-bracket">{'<'}</span>
-          <span className="navbar__logo-name">Nishank</span>
+          <span className="navbar__logo-name">Jiya</span>
           <span className="navbar__logo-bracket">{'/>'}</span>
         </a>
 
