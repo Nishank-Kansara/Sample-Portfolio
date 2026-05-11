@@ -1,0 +1,39 @@
+/* ============================
+   SCROLL TO TOP
+   ============================ */
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 900;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #915eff, #6a35d4);
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(145, 94, 255, 0.5);
+  opacity: 0;
+  transform: translateY(20px) scale(0.8);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.scroll-top--visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.scroll-top:hover {
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 8px 30px rgba(145, 94, 255, 0.7);
+}
+
+.scroll-top:active {
+  transform: scale(0.95);
+}

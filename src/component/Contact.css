@@ -1,0 +1,253 @@
+/* ============================
+   CONTACT SECTION
+   ============================ */
+.contact {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact__header .divider {
+  margin: 1rem auto 1.5rem;
+}
+
+.contact__header .section-subtitle {
+  margin: 0 auto;
+}
+
+/* Inner grid */
+.contact__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Info side */
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Email card */
+.contact__email-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact__email-card:hover {
+  transform: translateY(-4px);
+}
+
+.contact__email-icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.contact__email-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #aaa6c3;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.contact__email-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Socials */
+.contact__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact__social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact__social:hover .contact__social-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+.contact__social-icon {
+  font-size: 0.85rem;
+  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact__social-name {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #dfd9ff;
+}
+
+.contact__social-arrow {
+  opacity: 0;
+  color: #aaa6c3;
+  transition: all 0.3s ease;
+}
+
+/* Availability */
+.contact__availability {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.contact__avail-pulse {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #00f5a0;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 0 rgba(0, 245, 160, 0.5);
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(0, 245, 160, 0.5); }
+  70% { box-shadow: 0 0 0 10px rgba(0, 245, 160, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 245, 160, 0); }
+}
+
+.contact__avail-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.2rem;
+}
+
+.contact__avail-desc {
+  font-size: 0.8rem;
+  color: #aaa6c3;
+}
+
+/* Form */
+.contact__form {
+  padding: 2.5rem;
+}
+
+.contact__form-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.contact__field {
+  margin-bottom: 1.5rem;
+}
+
+.contact__label {
+  display: block;
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: #aaa6c3;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+.contact__input {
+  width: 100%;
+  padding: 0.875rem 1.125rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1.5px solid rgba(145, 94, 255, 0.2);
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+  resize: none;
+}
+
+.contact__input::placeholder {
+  color: #4a4568;
+}
+
+.contact__input:focus {
+  border-color: #915eff;
+  background: rgba(145, 94, 255, 0.05);
+  box-shadow: 0 0 0 4px rgba(145, 94, 255, 0.1);
+}
+
+.contact__textarea {
+  min-height: 130px;
+}
+
+.contact__submit {
+  width: 100%;
+  justify-content: center;
+  font-size: 0.95rem;
+  padding: 0.95rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__submit--loading {
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+/* Spinner */
+.contact__spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.contact__success {
+  text-align: center;
+  color: #00f5a0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: rgba(0, 245, 160, 0.08);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 245, 160, 0.2);
+}
+
+@media (max-width: 900px) {
+  .contact__inner {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,45 @@
+/* ============================
+   CUSTOM CURSOR
+   ============================ */
+* { cursor: none !important; }
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(145, 94, 255, 0.8);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  will-change: transform;
+  transition: width 0.25s, height 0.25s, background 0.25s, border-color 0.25s;
+  mix-blend-mode: difference;
+}
+
+.cursor-ring--hover {
+  width: 56px;
+  height: 56px;
+  background: rgba(145, 94, 255, 0.1);
+  border-color: #915eff;
+  margin: -8px 0 0 -8px;
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #915eff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 100000;
+  will-change: transform;
+}
+
+@media (max-width: 768px) {
+  * { cursor: auto !important; }
+  .cursor-ring, .cursor-dot { display: none; }
+}
